@@ -45,10 +45,9 @@ btn2.addEventListener("wheel", function(){
 btn3.addEventListener("click", function(){
     console.log(btn3);
 
-    let rndText = Math.floor(Math.random() * btnList.length);
+    let rndText = btnList[Math.floor(Math.random()*btnList.length)].textContent;
     console.log(rndText);
-    let btnText = btnList[rndText].textContent;
-    btn3.textContent = btnText;
+    btn3.textContent = rndText;
 });
 
 let btnPositionX = 0;
