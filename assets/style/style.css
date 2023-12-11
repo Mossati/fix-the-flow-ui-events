@@ -54,6 +54,30 @@ a:nth-of-type(12) {
   animation-iteration-count: 1;
 }
 
+.dblclick {
+  animation: dblclick 4s ease forwards;
+}
+
+.focus {
+  background-color: rgb(103, 17, 17);
+  color: red;
+  border-color: red;
+  animation: focus 4s ease forwards;
+}
+
+.mouseover {
+  background-color: #bed6e2;
+  color: #7db9c8;
+  border-color: #a2d2d6;
+  animation: mouseover 4s ease forwards;
+}
+
+.blur {
+  color: darkgray;
+  border-color: darkgray;
+  opacity: 0.5;
+}
+
 @keyframes jump {
   0% {
     transform: scale(1, 1) translateY(0);
@@ -79,3 +103,20 @@ a:nth-of-type(12) {
 }
 
 /* Jouw animaties */
+@keyframes dblclick {
+  0% {transform: translateY(0);}
+  50% {transform: translateY(20em);}
+  100% {transform: translateY(0);}
+}
+
+@keyframes focus {
+  0% {transform: scale(1, 1);}
+  50% {transform: scale(0.5, 0.2);}
+  100% {transform: scale(1, 1);}
+}
+
+@keyframes mouseover {
+  0% {transform: rotate(0deg);}
+  50% {transform: rotate(180deg);}
+  100% {transform: rotate(0deg);}
+}
