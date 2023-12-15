@@ -18,7 +18,7 @@ let btn8 = document.querySelector(".btn-8");
 let btn9 = document.querySelector(".btn-9");
 let btn10 = document.querySelector(".btn-10");
 
-let btnList = document.querySelectorAll(".btn-list")
+let btnList = document.querySelectorAll(".btn-list");
 
 btn1.addEventListener("mousemove", function(){
     console.log(btn1);
